@@ -12,11 +12,12 @@
 
 <body>
     <form action="/" method="post">
-        <h2>Login</h2>
-        <input type="text" name="usuario" placeholder="&#128272;Usuario" />
-        <input type="password" name="password" placeholder="&#128272;Contraseña" />
-        <input type="submit" name="Ingresar" value="Ingresar" />
-        
+        <div id="Contenedor">
+            <h2>Login</h2>
+            <input type="text" name="usuario" placeholder="&#128272;Usuario" />
+            <input type="password" name="password" placeholder="&#128272;Contraseña" />
+            <input type="submit" name="Ingresar" value="Ingresar" />
+        </div>
     </form>
 </body>
 </html>
