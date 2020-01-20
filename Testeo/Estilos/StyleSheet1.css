@@ -45,6 +45,20 @@
     border-radius:16px;
 }
 
+.Boton2{
+    margin-top: 20px;
+    float: left;
+    display: inline-block;
+    padding: 6px;
+    width: 140px;
+    border: none;
+    color: #ffffff;
+    font-size:19px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:16px;
+}
+
 #Datos{
     height:auto;
     background-color:#ffffff;
