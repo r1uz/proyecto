@@ -230,6 +230,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Imagenes\" />
+    <Folder Include="Videos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
