@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form>
+    <form id="form1" runat="server">
         <div id="Contenedor">
             <div id="Head">
                 <h1 class="Titulo">BNH</h1>
@@ -21,6 +21,8 @@
                 <video src="../Videos/Blonher_HD.mp4" loop="loop" controls="controls" width="160" height="120" ></video>
                 </div>
                 <div class="TriB"></div>
+
+                <asp:Button ID="Button1" runat="server" Height="25px" Text="Mantenimiento" OnClick="Button1_Click" />
             </div>
     
             <div id="Datos">
