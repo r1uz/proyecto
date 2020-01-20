@@ -10,6 +10,14 @@
     background-color:#ffffff;
 }
 
+#Contenedor2 {
+    margin:auto;
+    margin-top: 20px;
+    width: 160px;
+    height: 120px;
+    background-color:rgb(24,20,20);
+}
+
 #Head{
     height:665px;
     background-image: url(../Imagenes/BG3.jpg);
