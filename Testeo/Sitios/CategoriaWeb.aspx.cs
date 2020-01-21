@@ -19,7 +19,10 @@ namespace Testeo.Sitios
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            BindData();
+            if (!IsPostBack)
+            {
+                BindData();
+            }
         }
 
         protected void btnADD_Click(object sender, EventArgs e)
@@ -31,6 +34,44 @@ namespace Testeo.Sitios
 
             Label1.Text = i+" Categoria agregada" ;
 
+            BindData();
+        }
+
+        protected void rowCancelEditEvent(object sender, GridViewCancelEditEventArgs e)
+        {
+            GridView1.EditIndex = -1;
+            BindData();
+        }
+
+        protected void rowDeletingEvent(object sender, GridViewDeleteEventArgs e)
+        {
+            int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+            ado.eliminarCategoria(codigo);
+            GridView1.EditIndex = -1;
+            BindData();
+        }
+
+        protected void rowEditingEvent(object sender, GridViewEditEventArgs e)
+        {
+            GridView1.EditIndex = e.NewEditIndex;
+            BindData();
+        }
+
+        protected void rowUpdatingEvent(object sender, GridViewUpdateEventArgs e)
+        {
+
+            GridViewRow fila = GridView1.Rows[e.RowIndex];
+            int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+
+            string nombre = (fila.FindControl("txtnombre2") as TextBox).Text.ToUpper();
+            string descripcion = (fila.FindControl("txtdescripcion2") as TextBox).Text.ToUpper();
+
+            Categoria c = ado.buscarCategoria(codigo);
+            c.nombre = nombre;
+            c.descripcion = descripcion;
+            ado.actualizarCategoria(c);
+
+            GridView1.EditIndex = -1;
             BindData();
         }
     }
