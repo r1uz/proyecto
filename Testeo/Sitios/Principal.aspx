@@ -15,7 +15,7 @@
         <div id="Contenedor">
             <div id="Head">
                 <div class="Boton2">
-                <asp:Button ID="Button1" runat="server" Height="25px" Text="Mantenimiento" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Height="25px" Text="Mantenimiento" align="right"/>
                 </div>
                 <h1 class="Titulo">BNH</h1>
                 <h2 class="Subtitulo">Lo nuevo en Escritorios GAMERS</h2>
