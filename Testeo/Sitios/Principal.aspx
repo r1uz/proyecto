@@ -15,7 +15,7 @@
         <div id="Contenedor">
             <div id="Head">
                 <div class="Boton2">
-                <asp:Button ID="Button1" runat="server" Height="25px" Text="Mantenimiento" align="right"/>
+                <asp:Button ID="Button1" runat="server" Height="25px" Text="Mantenimiento" align="right" OnClick="Button1_Click"/>
                 </div>
                 <h1 class="Titulo">BNH</h1>
                 <h2 class="Subtitulo">Lo nuevo en Escritorios GAMERS</h2>
@@ -29,7 +29,7 @@
             <div id="Datos">
                 <img alt="LogoPrincipal" class="LogoPr" src="../Imagenes/Logo.jpg" />
                 <h1 class="QuienesSomos">Quienes somos</h1>
-                <p class="PaQuiSo">El texto argumentativo tiene como objetivo expresar opiniones o rebatirlas con el fin de persuadir a un receptor. La finalidad del autor puede ser probar o demostrar una idea (o tesis), refutar la contraria o bien persuadir o disuadir al receptor sobre determinados comportamientos, hechos o ideas.</p>
+                <p class="PaQuiSo">Somos&nbsp; una empresa innovadora en la industria de los escritorios para computadoras, dando un diseño unico jamás visto antes.</p>
             </div>
     
             <div id="Principal">

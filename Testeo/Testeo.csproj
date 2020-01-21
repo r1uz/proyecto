@@ -127,6 +127,14 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Estilos\css\bootstrap-theme.css" />
+    <Content Include="Estilos\css\bootstrap-theme.min.css" />
+    <Content Include="Estilos\css\bootstrap.css" />
+    <Content Include="Estilos\css\bootstrap.min.css" />
+    <Content Include="Estilos\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Estilos\js\bootstrap.js" />
+    <Content Include="Estilos\js\bootstrap.min.js" />
+    <Content Include="Estilos\js\npm.js" />
     <Content Include="Estilos\StyleSheet1.css" />
     <Content Include="Estilos\StyleSheet2.css" />
     <Content Include="favicon.ico" />
@@ -147,6 +155,14 @@
     <Content Include="Modelo.edmx.diagram">
       <DependentUpon>Modelo.edmx</DependentUpon>
     </Content>
+    <Content Include="Estilos\css\bootstrap-theme.css.map" />
+    <Content Include="Estilos\css\bootstrap-theme.min.css.map" />
+    <Content Include="Estilos\css\bootstrap.css.map" />
+    <Content Include="Estilos\css\bootstrap.min.css.map" />
+    <Content Include="Estilos\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Estilos\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Estilos\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Estilos\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Modelo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -187,6 +203,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Sitios\CategoriaWeb.aspx" />
     <Content Include="Sitios\Login.aspx" />
     <Content Include="Sitios\Principal.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -195,6 +212,7 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO\CategoriaADO.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -262,6 +280,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sitios\CategoriaWeb.aspx.cs">
+      <DependentUpon>CategoriaWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitios\CategoriaWeb.aspx.designer.cs">
+      <DependentUpon>CategoriaWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitios\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
