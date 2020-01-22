@@ -7,17 +7,29 @@
 <link rel="Shortcut Icon" href="../Imagenes/Logo.jpg" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="../Estilos/StyleSheet2.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Login</title>
+<title>Login | BNH</title>
 </head>
 
 <body>
-    <form action="/" method="post">
-        <div id="Contenedor">
-            <h2>Login</h2>
-            <input type="text" name="usuario" placeholder="&#128272;Usuario" />
-            <input type="password" name="password" placeholder="&#128272;Contraseña" />
-            <input type="submit" name="Ingresar" value="Ingresar" />
-        </div>
-    </form>
+    <div id="BG">
+        <form action="Principal.aspx" method="post">
+            <div class="LoginBox">
+                <img class="Avatar" src="../Imagenes/Logo.jpg" alt="Logo BNH"/>
+                <h1>Login</h1>
+
+                <!-- USERNAME -->
+                <label for="username">Username</label>
+                <input type="text" name="usuario" placeholder="&#128272;Usuario" />
+
+                <!-- PASSWORD -->
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="&#128272;Contraseña" />
+
+                <input type="submit" name="Ingresar" value="Ingresar" />
+                <a href="#">Lost your password</a><br/>
+                <a href="#">Don't have an account?</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

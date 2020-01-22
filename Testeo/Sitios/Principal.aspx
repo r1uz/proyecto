@@ -7,7 +7,7 @@
 <link rel="Shortcut Icon" href="../Imagenes/Logo.jpg" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="../Estilos/StyleSheet1.css" />    
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>BNH</title>
+<title>Home | BNH</title>
 </head>
 
 <body>
@@ -18,10 +18,11 @@
                 <asp:Button ID="Button1" runat="server" Height="25px" Text="Mantenimiento" align="right" OnClick="Button1_Click"/>
                 </div>
                 <h1 class="Titulo">BNH</h1>
+                <video src="../Videos/Blonher_HD.mp4" controls="controls" loop="loop" width="160" height="120"></video>
                 <h2 class="Subtitulo">Lo nuevo en Escritorios GAMERS</h2>
                 <a href="#" class="Boton">Reserva Ahora</a>
                 <div id="Contenedor2">
-                <video src="../Videos/Blonher_HD.mp4" loop="loop" controls="controls" width="160" height="120" ></video>
+                
                 </div>
                 <div class="TriB"></div>
             </div>

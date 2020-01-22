@@ -11,7 +11,7 @@
 }
 
 #Head{
-    height:665px;
+    height:100vh;
     background-image: url(../Imagenes/BG3.jpg);
     background-attachment:fixed;
     background-position:center;
@@ -23,12 +23,12 @@
 }
 
 .Titulo{
-    margin-top:120px;
-    font-size:85px;
+    margin-top:60px;
+    font-size:20vh;
 }
 
 .Subtitulo{
-    font-size:42px;
+    font-size:6vh;
     font-weight:300;
     margin-bottom:32px;
 }
