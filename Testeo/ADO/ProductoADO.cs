@@ -40,7 +40,9 @@ namespace Testeo.ADO
 
         public List<Producto> getProductos()
         {
-            return contexto.Producto.ToList();
+            var query = from p in contexto.Producto.Include("Categoria") select p;
+            return query.ToList();
+             
         }
     }
 }

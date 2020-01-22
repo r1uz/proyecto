@@ -16,18 +16,11 @@
             </div>
             <div class="thumbnail">
                 <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox>
-
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
-                    ControlToValidate="txtnombre"
-                    ErrorMessage="Required"
-                    runat="server" />
                 
+                <br />                
                 <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripcion"></asp:TextBox>
-
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2"
-                    ControlToValidate="txtdescripcion"
-                    ErrorMessage="Required"
-                    runat="server" />
+                <asp:Label ID="lb_descr" runat="server" Text=""></asp:Label>
+                
                 <br />
                 <br />
                 <asp:Button ID="btnADD" runat="server" Text="Agregar" CssClass="form-control btn btn-primary" OnClick="btnADD_Click" /><br />
@@ -47,7 +40,7 @@
                                 <asp:Label ID="Label2" runat="server" readonly="true" Text='<% #Bind("id_categoria")%>'></asp:Label>
                             </ItemTemplate>
                             <EditItemTemplate>
-                                <asp:TextBox ID="txtcodigo2" runat="server" ReadOnly="true" Text='<% #Bind("id_categoria")%>'></asp:TextBox>
+                                <asp:Label ID="lbcodigo2" runat="server" ReadOnly="true" Text='<% #Bind("id_categoria")%>'></asp:Label>
                             </EditItemTemplate>
                         </asp:TemplateField>
 

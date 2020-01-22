@@ -27,20 +27,35 @@ namespace Testeo.Sitios
 
         protected void btnADD_Click(object sender, EventArgs e)
         {
-            Categoria nueva = new Categoria();
-            nueva.nombre = txtnombre.Text.ToUpper();
-            nueva.descripcion = txtdescripcion.Text.ToUpper();
-            int i= ado.agregarCategoria(nueva);
 
-            Label1.Text = i+" Categoria agregada" ;
+            if (txtnombre.Text == "" || txtdescripcion.Text == "")
+            {
+               
+                    lb_descr.Text = "Favor no ingresar campos vacíos";
+                
+                
+            }
+            else
+            {
+                
+                lb_descr.Text = "";
+                Categoria nueva = new Categoria();
+                nueva.nombre = txtnombre.Text.ToUpper();
+                nueva.descripcion = txtdescripcion.Text.ToUpper();
+                int i = ado.agregarCategoria(nueva);
+                txtnombre.Text = "";
+                txtdescripcion.Text = "";
+                Label1.Text = i + " Categoria agregada";
+                BindData();
 
-            BindData();
+            }
         }
 
         protected void rowCancelEditEvent(object sender, GridViewCancelEditEventArgs e)
         {
             GridView1.EditIndex = -1;
             BindData();
+           
         }
 
         protected void rowDeletingEvent(object sender, GridViewDeleteEventArgs e)
@@ -59,7 +74,7 @@ namespace Testeo.Sitios
 
         protected void rowUpdatingEvent(object sender, GridViewUpdateEventArgs e)
         {
-
+           
             GridViewRow fila = GridView1.Rows[e.RowIndex];
             int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
 
