@@ -201,9 +201,9 @@
             <PropertyRef Name="id_producto" />
           </Key>
           <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="stock" Type="Int32" />
-          <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="precio" Type="Int32" />
           <Property Name="id_categoriap" Type="Int32" />
           <NavigationProperty Name="Categoria" Relationship="Self.FK_key" FromRole="Producto" ToRole="Categoria" />

@@ -15,8 +15,21 @@
                 <h3>Sección Categorías</h3>
             </div>
             <div class="thumbnail">
-                <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox><br />
-                <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripcion"></asp:TextBox><br />
+                <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox>
+
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+                    ControlToValidate="txtnombre"
+                    ErrorMessage="Required"
+                    runat="server" />
+                
+                <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripcion"></asp:TextBox>
+
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2"
+                    ControlToValidate="txtdescripcion"
+                    ErrorMessage="Required"
+                    runat="server" />
+                <br />
+                <br />
                 <asp:Button ID="btnADD" runat="server" Text="Agregar" CssClass="form-control btn btn-primary" OnClick="btnADD_Click" /><br />
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                 <br />
@@ -31,12 +44,12 @@
                     <Columns>
                         <asp:TemplateField HeaderText="CODIGO">
                             <ItemTemplate>
-                                <asp:Label ID="Label2" runat="server" Text='<% #Bind("id_categoria")%>'></asp:Label>
+                                <asp:Label ID="Label2" runat="server" readonly="true" Text='<% #Bind("id_categoria")%>'></asp:Label>
                             </ItemTemplate>
                             <EditItemTemplate>
-                                <asp:TextBox ID="txtcodigo2" runat="server" Text='<% #Bind("id_categoria")%>'></asp:TextBox>
+                                <asp:TextBox ID="txtcodigo2" runat="server" ReadOnly="true" Text='<% #Bind("id_categoria")%>'></asp:TextBox>
                             </EditItemTemplate>
-                        </asp:TemplateField> 
+                        </asp:TemplateField>
 
                         <asp:TemplateField HeaderText="NOMBRE">
                             <ItemTemplate>
@@ -45,16 +58,16 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="txtnombre2" runat="server" Text='<% #Bind("nombre")%>'></asp:TextBox>
                             </EditItemTemplate>
-                        </asp:TemplateField> 
+                        </asp:TemplateField>
 
-                         <asp:TemplateField HeaderText="DESCRIPCIÓN">
+                        <asp:TemplateField HeaderText="DESCRIPCIÓN">
                             <ItemTemplate>
                                 <asp:Label ID="Label4" runat="server" Text='<% #Bind("descripcion")%>'></asp:Label>
                             </ItemTemplate>
                             <EditItemTemplate>
                                 <asp:TextBox ID="txtdescripcion2" runat="server" Text='<% #Bind("descripcion")%>'></asp:TextBox>
                             </EditItemTemplate>
-                        </asp:TemplateField> 
+                        </asp:TemplateField>
 
                         <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" />
                     </Columns>

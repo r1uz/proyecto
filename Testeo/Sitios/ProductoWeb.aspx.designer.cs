@@ -10,7 +10,7 @@
 namespace Testeo.Sitios {
     
     
-    public partial class CategoriaWeb {
+    public partial class ProductoWeb {
         
         /// <summary>
         /// Control form1.
@@ -31,13 +31,22 @@ namespace Testeo.Sitios {
         protected global::System.Web.UI.WebControls.TextBox txtnombre;
         
         /// <summary>
-        /// Control RequiredFieldValidator1.
+        /// Control txtprecio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.TextBox txtprecio;
+        
+        /// <summary>
+        /// Control txtstock.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtstock;
         
         /// <summary>
         /// Control txtdescripcion.
@@ -49,31 +58,31 @@ namespace Testeo.Sitios {
         protected global::System.Web.UI.WebControls.TextBox txtdescripcion;
         
         /// <summary>
-        /// Control RequiredFieldValidator2.
+        /// Control dlcategoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.DropDownList dlcategoria;
         
         /// <summary>
-        /// Control btnADD.
+        /// Control btnprod.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnADD;
+        protected global::System.Web.UI.WebControls.Button btnprod;
         
         /// <summary>
-        /// Control Label1.
+        /// Control Label5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
         /// Control GridView1.
