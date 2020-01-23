@@ -1,51 +1,51 @@
-﻿*{
-    margin:0px;
-    padding:0px;
+﻿* {
+    margin: 0px;
+    padding: 0px;
 }
 
-#Contenedor{
-    margin:auto;
-    width:auto;
-    height:auto;
-    background-color:#ffffff;
+#Contenedor {
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
 }
 
-#Head{
-    height:100vh;
+#Head {
+    height: 100vh;
     background-image: url(../Imagenes/BG3.jpg);
-    background-attachment:fixed;
-    background-position:center;
-    background-size:cover;
-    position:relative;
-    overflow:hidden;
-    color:#ffffff;
-    text-align:center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
 }
 
-.Titulo{
-    margin-top:60px;
-    font-size:20vh;
+.Titulo {
+    margin-top: 60px;
+    font-size: 20vh;
 }
 
-.Subtitulo{
-    font-size:6vh;
-    font-weight:300;
-    margin-bottom:32px;
+.Subtitulo {
+    font-size: 6vh;
+    font-weight: 300;
+    margin-bottom: 32px;
 }
 
-.Boton{
-    display:inline-block;
-    padding:6px;
+.Boton {
+    display: inline-block;
+    padding: 6px;
     width: 128px;
     border: 1px solid #ffffff;
-    color:#ffffff;
-    font-size:19px;
-    text-align:center;
-    text-decoration:none;
-    border-radius:16px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
 }
 
-.Boton2{
+.Boton2 {
     margin-top: 20px;
     float: left;
     display: inline-block;
@@ -53,53 +53,78 @@
     width: 140px;
     border: none;
     color: #ffffff;
-    font-size:19px;
-    text-align:center;
-    text-decoration:none;
-    border-radius:16px;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
 }
 
-#Datos{
-    height:auto;
-    background-color:#ffffff;
+#Datos {
+    height: auto;
+    background-color: #ffffff;
 }
 
-.LogoPr{
-    float:left;
-    height:200px;
-    width:300px;
+.LogoPr {
+    float: left;
+    height: 200px;
+    width: 300px;
 }
 
 .QuienesSomos {
     text-align: center;
     font-size: 85px;
-    font-weight:300;
+    font-weight: 300;
 }
 
-.PaQuiSo{
-    margin-top:25px;
-    margin-bottom:13px;
-    margin:1em;
-    text-align:justify;
-    font-size:24px;
-    font-weight:300;
-    color:rgb(24,20,20);
-
+.PaQuiSo {
+    margin-top: 25px;
+    margin-bottom: 13px;
+    margin: 1em;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(24,20,20);
 }
 
 #Principal {
-    height: 665px;
-    background-image: url(../Imagenes/BG2.jpg);
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    background-color: rgb(24,20,20);
     text-align: center;
 }
 
-#Footer{
+.contain1 {
+    width: 32%;
+    height: 100%;
+    background-color: #b6ff00;
+    float: left;
+}
+
+.contain2 {
+    width: 36%;
+    height: 100%;
+    background-color: black;
+    float: left;
+}
+
+.imgcontain {
+    margin: 200px auto;
+    width: 90%;
+    height: 240px;
+}
+
+.contain3 {
+    width: 32%;
+    height: 100%;
+    background-color: #b6ff00;
+    float: left;
+}
+
+#Footer {
     height: 665px;
     background-image: url(../Imagenes/BG1.jpg);
     background-attachment: fixed;
@@ -111,16 +136,16 @@
     text-align: center;
 }
 
-.TriB{
-    position:absolute;
-    bottom:0;
-    left:0;
-    border-width:0 0 35vh 100vw;
-    border-style:solid;
-    border-color:transparent transparent #fff transparent;
+.TriB {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
 }
 
-.TriT{
+.TriT {
     position: absolute;
     top: 0;
     left: 0;
