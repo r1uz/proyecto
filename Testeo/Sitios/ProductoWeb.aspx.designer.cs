@@ -58,6 +58,24 @@ namespace Testeo.Sitios {
         protected global::System.Web.UI.WebControls.TextBox txtdescripcion;
         
         /// <summary>
+        /// Control imgPreview.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgPreview;
+        
+        /// <summary>
+        /// Control fuploadImagen.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuploadImagen;
+        
+        /// <summary>
         /// Control lb_descr.
         /// </summary>
         /// <remarks>
@@ -92,6 +110,24 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// Control lb_image.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_image;
+        
+        /// <summary>
+        /// Control Image2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image2;
         
         /// <summary>
         /// Control GridView1.
