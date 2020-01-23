@@ -88,18 +88,44 @@
 }
 
 #Principal {
-    height: 665px;
-    background-image: url(../Imagenes/BG2.jpg);
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    background-color:rgb(24,20,20);
     text-align: center;
 }
 
-#Footer{
+.contain1{
+    width:32%;
+    height:100%;
+    background-color:#b6ff00;
+    float:left;
+}
+
+.contain2 {
+    width: 36%;
+    height: 100%;
+    background-color:black;
+    float: left;
+}
+
+.imgcontain{
+    margin:200px auto;
+    width:90%;
+    height:240px;
+}
+
+.contain3 {
+    width: 32%;
+    height: 100%;
+    background-color: #b6ff00;
+    float: left;
+}
+
+#Footer {
     height: 665px;
     background-image: url(../Imagenes/BG1.jpg);
     background-attachment: fixed;
