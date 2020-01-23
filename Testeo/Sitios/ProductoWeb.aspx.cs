@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +15,7 @@ namespace Testeo.Sitios
     {
         private ProductoADO adoproducto = new ProductoADO();
         private CategoriaADO adocategoria = new CategoriaADO();
-
+        string CadenaConexion = "Data Source=(Localdb)\\MSSQLLocalDB;Initial Catalog=Proyecto;Integrated Security=True";
         private void BindDataProd()
         {
             GridView1.DataSource = adoproducto.getProductos();
@@ -45,6 +48,19 @@ namespace Testeo.Sitios
             {
                 Categoria c = adocategoria.buscarCategoria(Convert.ToInt32(dlcategoria.SelectedValue));
                 Producto p = new Producto();
+
+
+                int tamano = fuploadImagen.PostedFile.ContentLength;
+                byte[] ImagenOriginal = new byte[tamano];
+
+                fuploadImagen.PostedFile.InputStream.Read(ImagenOriginal, 0, tamano);
+                Bitmap ImagenOriginalBinaria = new Bitmap(fuploadImagen.PostedFile.InputStream);
+
+                string ImagenDataURL64 = "data:image/jpg;base64," + Convert.ToBase64String(ImagenOriginal);
+                
+
+
+                p.Imagen = ImagenOriginal;
                 p.nombre = txtnombre.Text.ToUpper();
                 p.precio = Convert.ToInt32(txtprecio.Text);
                 p.stock = Convert.ToInt32(txtstock.Text);
@@ -53,16 +69,21 @@ namespace Testeo.Sitios
                 c.Producto.Add(p);
                 int i = adoproducto.agregarProducto(p);
                 Label5.Text = i + " Producto Agregado";
+                lb_image.Text = "Imagen Agregada: ";
                 txtnombre.Text = "";
                 txtprecio.Text = "";
                 txtstock.Text = "";
                 txtdescripcion.Text = "";
+                Image2.ImageUrl = ImagenDataURL64;
+
                 BindDataProd();
+                
             }
         }
 
         protected void RowDeletingEvent(object sender, GridViewDeleteEventArgs e)
         {
+            Image2.ImageUrl = null;
             int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
             adoproducto.eliminarProducto(codigo);
             GridView1.EditIndex = -1;
@@ -122,6 +143,23 @@ namespace Testeo.Sitios
                 lista.DataBind();
 
             }
+
+        }
+
+        protected void ConsultarImagen()
+        {
+            SqlConnection conexionSQL = new SqlConnection(CadenaConexion);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "Select imagen, nombre from producto order by id asc";
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = conexionSQL;
+            conexionSQL.Open();
+
+            DataTable ImagenesBD = new DataTable();
+            ImagenesBD.Load(cmd.ExecuteReader());
+            Repeater1.DataSource = ImagenesBD;
+            Repeater1.DataBind();
+            conexionSQL.Close();
 
         }
     }

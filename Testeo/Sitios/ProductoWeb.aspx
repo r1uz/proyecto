@@ -16,20 +16,33 @@
             </div>
             <div class="thumbnail">
                 <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox><br />
-                
+
                 <asp:TextBox ID="txtprecio" runat="server" CssClass="form-control" placeholder="Precio"></asp:TextBox><br />
-                
+
                 <asp:TextBox ID="txtstock" runat="server" CssClass="form-control" placeholder="Stock"></asp:TextBox><br />
-                
+
                 <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripción"></asp:TextBox><br />
+
+
+                <asp:Image ID="imgPreview" Width="50" float="left" ImageUrl="https://cdn.pixabay.com/photo/2017/07/11/10/43/upload-2493114_960_720.png" runat="server" />
+                <br />
+                <br />
+                Archivo:
+                <asp:FileUpload ID="fuploadImagen" accept=".jpg" CssClass="form-control" runat="server" />
+                <br />
+
+
                 <asp:Label ID="lb_descr" runat="server" Text=""></asp:Label>
                 <br />
+
                 <br />
 
                 <asp:DropDownList ID="dlcategoria" runat="server"></asp:DropDownList><br />
                 <br />
                 <asp:Button ID="btnprod" runat="server" Text="Agregar Producto" CssClass="form-control btn btn-primary" OnClick="btnprod_Click" /><br />
                 <asp:Label ID="Label5" runat="server" Text=""></asp:Label><br />
+                <asp:Label ID="lb_image" runat="server" Text=""></asp:Label><br />
+                <asp:Image ID="Image2" Width="400" runat="server" />
                 <br />
 
                 <asp:GridView ID="GridView1" CssClass="table" runat="server"
@@ -38,7 +51,7 @@
                     OnRowEditing="RowEditingEvent"
                     OnRowUpdating="RowUpdatingEvent"
                     AutoGenerateColumns="false"
-                    DataKeyNames="id_producto" 
+                    DataKeyNames="id_producto"
                     OnRowDataBound="RowDataBoundEvent">
 
                     <Columns>
@@ -60,7 +73,7 @@
                             </EditItemTemplate>
                         </asp:TemplateField>
 
-                         <asp:TemplateField HeaderText="PRECIO">
+                        <asp:TemplateField HeaderText="PRECIO">
                             <ItemTemplate>
                                 <asp:Label ID="lb4" runat="server" Text='<% #Bind("precio")%>'></asp:Label>
                             </ItemTemplate>

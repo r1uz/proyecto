@@ -207,6 +207,7 @@
     <Content Include="Sitios\Login.aspx" />
     <Content Include="Sitios\Principal.aspx" />
     <Content Include="Sitios\ProductoWeb.aspx" />
+    <Content Include="Sitios\PruebaImagen.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -310,6 +311,13 @@
     </Compile>
     <Compile Include="Sitios\ProductoWeb.aspx.designer.cs">
       <DependentUpon>ProductoWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitios\PruebaImagen.aspx.cs">
+      <DependentUpon>PruebaImagen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitios\PruebaImagen.aspx.designer.cs">
+      <DependentUpon>PruebaImagen.aspx</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>Modelo.tt</DependentUpon>

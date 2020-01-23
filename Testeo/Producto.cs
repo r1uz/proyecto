@@ -25,6 +25,7 @@ namespace Testeo
         public string descripcion { get; set; }
         public Nullable<int> precio { get; set; }
         public Nullable<int> id_categoriap { get; set; }
+        public byte[] Imagen { get; set; }
     
         public virtual Categoria Categoria { get; set; }
         public virtual ICollection<Detalle_Reserva> Detalle_Reserva { get; set; }
