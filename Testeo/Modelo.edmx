@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="ProyectoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ProyectoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Categoria">
           <Key>
             <PropertyRef Name="id_categoria" />
@@ -28,12 +28,11 @@
             <PropertyRef Name="id_producto" />
           </Key>
           <Property Name="id_producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="100" />
+          <Property Name="nombre" Type="varchar" MaxLength="15" />
           <Property Name="stock" Type="int" />
-          <Property Name="descripcion" Type="varchar" MaxLength="255" />
+          <Property Name="descripcion" Type="varchar" MaxLength="50" />
           <Property Name="precio" Type="int" />
           <Property Name="id_categoriap" Type="int" />
-          <Property Name="Imagen" Type="image" />
         </EntityType>
         <EntityType Name="Reserva">
           <Key>
@@ -171,7 +170,8 @@
             <End Role="Reserva" EntitySet="Reserva" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ProyectoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -208,7 +208,6 @@
           <Property Name="id_categoriap" Type="Int32" />
           <NavigationProperty Name="Categoria" Relationship="Self.FK_key" FromRole="Producto" ToRole="Categoria" />
           <NavigationProperty Name="Detalle_Reserva" Relationship="Self.fk_key2" FromRole="Producto" ToRole="Detalle_Reserva" />
-          <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Reserva">
           <Key>
@@ -388,7 +387,6 @@
           <EntitySetMapping Name="Producto">
             <EntityTypeMapping TypeName="ProyectoModel.Producto">
               <MappingFragment StoreEntitySet="Producto">
-                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
                 <ScalarProperty Name="id_producto" ColumnName="id_producto" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="stock" ColumnName="stock" />

@@ -34,20 +34,6 @@
             </div>
     
             <div id="Principal">
-                <div class="contain1">
-
-                </div>
-                <div class="contain2">
-                    <a href="ModuloEscritorio">
-                    <img alt="escritorio" class="imgcontain" src="../Imagenes/muestra.jpeg"/>
-                    </a>
-                </div>
-                <div class="contain3">
-
-                </div>
-
-
-                <div class="TriB"></div>
                 <div class="TriT"></div>
             </div>
     
