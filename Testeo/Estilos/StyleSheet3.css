@@ -1,0 +1,11 @@
+﻿*{
+    padding:0;
+    margin:0;
+}
+body {
+    background-image: url(../Imagenes/BGL2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+}

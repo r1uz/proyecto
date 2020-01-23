@@ -131,6 +131,7 @@
     <Content Include="Estilos\css\bootstrap-theme.min.css" />
     <Content Include="Estilos\css\bootstrap.css" />
     <Content Include="Estilos\css\bootstrap.min.css" />
+    <Content Include="Estilos\StyleSheet3.css" />
     <Content Include="Estilos\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Estilos\js\bootstrap.js" />
     <Content Include="Estilos\js\bootstrap.min.js" />
