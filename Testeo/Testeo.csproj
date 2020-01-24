@@ -135,6 +135,7 @@
     <Content Include="Estilos\js\npm.js" />
     <Content Include="Estilos\StyleSheet1.css" />
     <Content Include="Estilos\StyleSheet2.css" />
+    <Content Include="Estilos\StyleSheetAccesorios.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

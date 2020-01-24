@@ -22,7 +22,7 @@ namespace Testeo.Sitios
         {
             SqlConnection conexionSQL = new SqlConnection(CadenaConexion);
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select imagen, nombre, precio from producto where id_categoriap <> 1 order by id_producto asc";
+            cmd.CommandText = "Select p.imagen, p.nombre, p.precio, c.nombre from producto p join Categoria c on(p.id_categoriap= c.id_categoria) where c.nombre NOT like 'Escritorios' order by id_producto asc";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conexionSQL;
             conexionSQL.Open();
