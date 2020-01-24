@@ -23,8 +23,9 @@
 }
 
 .Titulo {
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 20vh;
+    text-align:center;
 }
 
 .Subtitulo {
@@ -46,10 +47,10 @@
 }
 
 .Boton2 {
-    margin-top: 20px;
+    margin-top:0;
     float: left;
     display: inline-block;
-    padding: 6px;
+    padding: 0;
     width: 140px;
     border: none;
     color: #ffffff;
@@ -62,7 +63,10 @@
 #Datos {
     height: auto;
     background-color: #ffffff;
+    position:relative;
+
 }
+
 
 .LogoPr {
     float: left;
@@ -124,16 +128,79 @@
     float: left;
 }
 
-#Footer {
-    height: 665px;
-    background-image: url(../Imagenes/BG1.jpg);
+footer {
+    height: 100vh;
+    background-image: url(../Imagenes/BGL1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color:#b6ff00;
+    
+}
+
+.titulo-footer {
+    margin-top:40px;
+    text-align: center;
+    font-size: 56px;
+}
+
+.Subtitulo-footer {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+
+.form-footer{
+    display:flex;
+    width:700px;;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin:auto;
+}
+
+input[type=text], input[type=email] {
+    display: inline-block;
+    margin:auto;
+    height:40px;
+    width: 400px;
+    border: none;
+    color:#ffffff;
+    font-family: sans-serif;
+    background: rgba(37,37,37,.7);
+    margin-bottom: 16px;
+    border-top: 1px solid rgba(37,37,37,.7);
+}
+
+textarea {
+    margin:auto;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    min-width: 600px;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37,37,37,.7);
+    border:none;
+    color:#ffffff;
+    font-family:sans-serif;
+    margin-bottom:16px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    margin-left:auto;
+    border: none;
+    color: #ffffff;
+    background: rgba(37,37,37,.7);
+    width:96px;
 }
 
 .TriB {
@@ -145,10 +212,29 @@
     border-color: transparent transparent #fff transparent;
 }
 
+.TriB1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #2c3e50;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
 .TriT {
     position: absolute;
     top: 0;
     left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.TriT1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#2c3e50;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
     border-color: #fff transparent transparent transparent;
