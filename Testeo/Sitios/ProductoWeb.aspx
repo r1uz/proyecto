@@ -90,7 +90,7 @@
                                 <asp:TextBox ID="txtstock2" runat="server" Text='<% #Bind("stock")%>'></asp:TextBox>
                             </EditItemTemplate>
                         </asp:TemplateField>
-
+                        
                         <asp:TemplateField HeaderText="DESCRIPCION">
                             <ItemTemplate>
                                 <asp:Label ID="lb6" runat="server" Text='<% #Bind("descripcion")%>'></asp:Label>
@@ -115,7 +115,7 @@
 
 
                     </Columns>
-
+                    
 
 
 

@@ -38,7 +38,7 @@
 
                 </div>
                 <div class="contain2">
-                    <a href="ModuloEscritorio">
+                    <a href="ModuloEscritorios">
                     <img alt="escritorio" class="imgcontain" src="../Imagenes/muestra.jpeg"/>
                     </a>
                 </div>

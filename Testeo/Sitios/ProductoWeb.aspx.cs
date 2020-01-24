@@ -146,21 +146,6 @@ namespace Testeo.Sitios
 
         }
 
-        protected void ConsultarImagen()
-        {
-            SqlConnection conexionSQL = new SqlConnection(CadenaConexion);
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select imagen, nombre from producto order by id asc";
-            cmd.CommandType = CommandType.Text;
-            cmd.Connection = conexionSQL;
-            conexionSQL.Open();
-
-            DataTable ImagenesBD = new DataTable();
-            ImagenesBD.Load(cmd.ExecuteReader());
-            Repeater1.DataSource = ImagenesBD;
-            Repeater1.DataBind();
-            conexionSQL.Close();
-
-        }
+        
     }
 }
