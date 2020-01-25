@@ -34,6 +34,10 @@
 
             <div id="Principal">
                 <div class="contain1">
+                    <a href="ModuloAccesorios">
+                        <img alt="escritorio" class="imgcontain" src="../Imagenes/Principal.jpg" />
+                    </a>
+
                 </div>
                 <div class="contain2">
                     <a href="ModuloEscritorios">
@@ -41,6 +45,9 @@
                     </a>
                 </div>
                 <div class="contain3">
+                    <a href="ModuloAccesorios">
+                        <img alt="escritorio" class="imgcontain" src="../Imagenes/Principal1.jpg" />
+                    </a>
                 </div>
 
 

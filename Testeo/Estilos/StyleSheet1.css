@@ -114,8 +114,13 @@
 .contain1 {
     width: 32%;
     height: 100%;
-    background-color: #b6ff00;
+    background-color: red;
     float: left;
+}
+
+.contain1:hover {
+    width: 32%;
+    border-top: 20px solid red;
 }
 
 .contain2 {
@@ -132,7 +137,7 @@
 }
 
 .imgcontain {
-    margin: 200px auto;
+    margin: 300px auto;
     width: 90%;
     height: 240px;
 }
@@ -140,8 +145,13 @@
 .contain3 {
     width: 32%;
     height: 100%;
-    background-color: #b6ff00;
+    background-color: red;
     float: right;
+}
+
+.contain3:hover {
+    width: 32%;
+    border-top: 20px solid red;
 }
 
 footer {
