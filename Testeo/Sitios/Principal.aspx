@@ -44,12 +44,12 @@
                 </div>
 
 
-                <div class="TriB"></div>
+                
                 <div class="TriT"></div>
             </div>
             </div>
              </form>
-    <div id="Contenedor">
+    <div id="Contenedor3">
             <footer>
                 <h2 class="titulo-footer">Contactanos</h2>
                 <h3 class="Subtitulo-footer">Reserva ahora</h3>
