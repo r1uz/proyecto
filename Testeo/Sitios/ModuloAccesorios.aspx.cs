@@ -34,5 +34,18 @@ namespace Testeo.Sitios
             conexionSQL.Close();
 
         }
+
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Principal.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ModuloEscritorios.aspx");
+        }
+
+
     }
 }

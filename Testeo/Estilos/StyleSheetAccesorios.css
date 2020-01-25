@@ -4,10 +4,14 @@
 }
 
 .background {
+  
     height: 100vh;
     background-image: url(../Imagenes/BGL1.jpg);
-    background-position:center;
-    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow:scroll;
 }
 
 .img-responsive{

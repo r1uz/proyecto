@@ -7,11 +7,13 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Testeo.Sitios {
-    
-    
-    public partial class ProductoWeb {
-        
+namespace Testeo.Sitios
+{
+
+
+    public partial class ProductoWeb
+    {
+
         /// <summary>
         /// Control form1.
         /// </summary>
@@ -20,7 +22,16 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+
         /// <summary>
         /// Control txtnombre.
         /// </summary>
@@ -29,7 +40,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnombre;
-        
+
         /// <summary>
         /// Control txtprecio.
         /// </summary>
@@ -38,7 +49,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtprecio;
-        
+
         /// <summary>
         /// Control txtstock.
         /// </summary>
@@ -47,7 +58,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtstock;
-        
+
         /// <summary>
         /// Control txtdescripcion.
         /// </summary>
@@ -56,34 +67,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtdescripcion;
-        
-        /// <summary>
-        /// Control imgPreview.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPreview;
-        
-        /// <summary>
-        /// Control fuploadImagen.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fuploadImagen;
-        
-        /// <summary>
-        /// Control lb_descr.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_descr;
-        
+
         /// <summary>
         /// Control dlcategoria.
         /// </summary>
@@ -92,7 +76,34 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dlcategoria;
-        
+
+        /// <summary>
+        /// Control imgPreview.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgPreview;
+
+        /// <summary>
+        /// Control fuploadImagen.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuploadImagen;
+
+        /// <summary>
+        /// Control lb_descr.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_descr;
+
         /// <summary>
         /// Control btnprod.
         /// </summary>
@@ -101,7 +112,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnprod;
-        
+
         /// <summary>
         /// Control Label5.
         /// </summary>
@@ -110,7 +121,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-        
+
         /// <summary>
         /// Control lb_image.
         /// </summary>
@@ -119,7 +130,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lb_image;
-        
+
         /// <summary>
         /// Control Image2.
         /// </summary>
@@ -128,7 +139,7 @@ namespace Testeo.Sitios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image2;
-        
+
         /// <summary>
         /// Control GridView1.
         /// </summary>

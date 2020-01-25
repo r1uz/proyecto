@@ -33,12 +33,15 @@
     margin-top: 40px;
     font-size: 20vh;
     text-align:center;
+    font-family:NSimSun;
+    text-decoration:solid;
 }
 
 .Subtitulo {
     font-size: 6vh;
     font-weight: 300;
     margin-bottom: 32px;
+    font-family: NSimSun;
 }
 
 .Boton {
@@ -55,7 +58,7 @@
 
 .Boton2 {
     margin-top:10px;
-    float: left;
+    float: right;
     display: inline-block;
     padding: 0;
     width: 140px;

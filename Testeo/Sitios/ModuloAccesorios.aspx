@@ -13,7 +13,11 @@
 <body>
     <div class="background">
         <form id="form1" runat="server">
-            <div class="jumbotron">
+
+            <asp:Button ID="Button2" runat="server" CssClass="btn btn-warning2" Text="Escritorios" OnClick="Button2_Click" /> 
+           <asp:Button ID="Button1" runat="server" CssClass="btn btn-warning" Text="Volver" OnClick="Button1_Click" /><br /><br />
+            
+            <div class="jumbotron2">
 
                 <h3>ACCESORIOS</h3>
             </div>
@@ -21,24 +25,21 @@
                 <div class="row">
                     <asp:Panel runat="server" CssStyle="text-align:left;" ID="Panel2" HorizontalAlign="left">
 
-                    <asp:Repeater ID="Repeater1"  runat="server">
-                        <ItemTemplate>
-                            <div class="jumbotron jumbotron-fluid">
-                            <div class="container-fluid">
-                                <br />
-                                <img class="img-responsive"  src="data:image/jpg;base64,<%# Convert.ToBase64String((byte[])DataBinder.Eval(Container.DataItem,"Imagen"))%>" />
-                                <%#DataBinder.Eval(Container.DataItem,"nombre") %><br />
-                               Código Producto: <%#DataBinder.Eval(Container.DataItem,"id_producto") %><br />
-                               Precio: $<%#DataBinder.Eval(Container.DataItem,"precio") %><br />
-                               Descripción:<%#DataBinder.Eval(Container.DataItem,"descripcion") %><br /><br />
-                               <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Reservar" />
+                        <asp:Repeater ID="Repeater1" runat="server">
+                            <ItemTemplate>
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container-fluid">
+                                        <br />
+                                        <img class="img-responsive" src="data:image/jpg;base64,<%# Convert.ToBase64String((byte[])DataBinder.Eval(Container.DataItem,"Imagen"))%>" />
+                                         <%#DataBinder.Eval(Container.DataItem,"nombre") %><br />
+                                        Código Producto: <%#DataBinder.Eval(Container.DataItem,"id_producto") %><br />
+                                        Precio: $<%#DataBinder.Eval(Container.DataItem,"precio") %><br />Descripción:<%#DataBinder.Eval(Container.DataItem,"descripcion") %><br /><br /><asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Reservar" />
 
-                            </div>
-                                
-                            </div>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                        </asp:Panel>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </asp:Panel>
                 </div>
             </div>
         </form>

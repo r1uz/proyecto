@@ -64,7 +64,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 20px;
   margin: 0.67em 0;
 }
 mark {
@@ -118,8 +118,7 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  font: inherit;
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 button {
   overflow: visible;
@@ -3374,6 +3373,12 @@ fieldset[disabled] .btn-info.focus {
   background-color: #f0ad4e;
   border-color: #eea236;
 }
+.btn-warning2 {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    float:right;
+}
 .btn-warning:focus,
 .btn-warning.focus {
   color: #fff;
@@ -5037,6 +5042,19 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee;
+  font-size:17px
+}
+.h12{
+    font-size:18px;
+}
+.jumbotron2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eeeeee;
+    text-align:center
+}
 }
 .jumbotron h1,
 .jumbotron .h1 {

@@ -22,7 +22,7 @@ namespace Testeo.Sitios
         {
             SqlConnection conexionSQL = new SqlConnection(CadenaConexion);
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "Select p.imagen, p.nombre, p.precio from producto p join categoria c on (p.id_categoriap=c.id_categoria) where c.nombre= 'Escritorios'  order by id_producto asc";
+            cmd.CommandText = "Select p.imagen, p.nombre, p.precio, p.id_producto, p.descripcion from producto p join categoria c on (p.id_categoriap=c.id_categoria) where c.nombre= 'Escritorios'  order by id_producto asc";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conexionSQL;
             conexionSQL.Open();
@@ -33,6 +33,16 @@ namespace Testeo.Sitios
             Repeater1.DataBind();
             conexionSQL.Close();
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Principal.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ModuloAccesorios.aspx");
         }
     }
 }

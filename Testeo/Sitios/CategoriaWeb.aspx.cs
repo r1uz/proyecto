@@ -89,5 +89,10 @@ namespace Testeo.Sitios
             GridView1.EditIndex = -1;
             BindData();
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Mantenimiento.aspx");
+        }
     }
 }
