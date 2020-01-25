@@ -13,19 +13,32 @@
 <body>
     <div class="background">
         <form id="form1" runat="server">
+            <div class="jumbotron">
+
+                <h3>ACCESORIOS</h3>
+            </div>
             <div class="container">
                 <div class="row">
-                    <asp:Repeater ID="Repeater1" runat="server">
+                    <asp:Panel runat="server" CssStyle="text-align:left;" ID="Panel2" HorizontalAlign="left">
+
+                    <asp:Repeater ID="Repeater1"  runat="server">
                         <ItemTemplate>
-                            <div class="col-md-4">
+                            <div class="jumbotron jumbotron-fluid">
+                            <div class="container-fluid">
                                 <br />
-                                <img class="img-responsive" src="data:image/jpg;base64,<%# Convert.ToBase64String((byte[])DataBinder.Eval(Container.DataItem,"Imagen"))%>" />
-                                <%#DataBinder.Eval(Container.DataItem,"nombre") %>
-                                <%#DataBinder.Eval(Container.DataItem,"precio") %>
-                                <br />
+                                <img class="img-responsive"  src="data:image/jpg;base64,<%# Convert.ToBase64String((byte[])DataBinder.Eval(Container.DataItem,"Imagen"))%>" />
+                                <%#DataBinder.Eval(Container.DataItem,"nombre") %><br />
+                               Código Producto: <%#DataBinder.Eval(Container.DataItem,"id_producto") %><br />
+                               Precio: $<%#DataBinder.Eval(Container.DataItem,"precio") %><br />
+                               Descripción:<%#DataBinder.Eval(Container.DataItem,"descripcion") %><br /><br />
+                               <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Reservar" />
+
+                            </div>
+                                
                             </div>
                         </ItemTemplate>
                     </asp:Repeater>
+                        </asp:Panel>
                 </div>
             </div>
         </form>

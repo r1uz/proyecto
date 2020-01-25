@@ -17,8 +17,8 @@
                 </h3>
 
             </div>
-            <asp:Button ID="Button1" runat="server" CssClass="form-control btn btn-success" Text="Administrar Categorias" OnClick="Button1_Click" /><br /><br />
-            <asp:Button ID="Button2" runat="server" CssClass="form-control btn btn-success" Text="Administrar Productos" OnClick="Button2_Click" /><br /><br />
+            <asp:Button ID="Button1" runat="server" CssClass="form-control btn btn-success" Text="Módulo Categorias" OnClick="Button1_Click" /><br /><br />
+            <asp:Button ID="Button2" runat="server" CssClass="form-control btn btn-success" Text="Módulo Productos" OnClick="Button2_Click" /><br /><br />
             <asp:Button ID="Button3" runat="server" CssClass="form-control btn btn-primary" Text="Ver Reservas" OnClick="Button3_Click" /><br /><br />
             <asp:Button ID="Button5" runat="server" CssClass="btn-primary" Text="Volver" OnClick="Button5_Click" />
         </div>

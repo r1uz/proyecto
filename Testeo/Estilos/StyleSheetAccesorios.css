@@ -17,6 +17,7 @@
     height:200px;
     border:solid 5px white;
     float:left;
+    margin-left:auto;
 }
 
 .img-responsive:hover{
