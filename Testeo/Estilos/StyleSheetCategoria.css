@@ -1,0 +1,17 @@
+﻿* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    background-image: url(../Imagenes/BGL1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+}
+
+.jumbotronq{
+    background-color:black;
+    width:750px;
+    height:200px;
+}

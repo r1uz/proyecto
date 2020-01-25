@@ -136,6 +136,7 @@
     <Content Include="Estilos\StyleSheet1.css" />
     <Content Include="Estilos\StyleSheet2.css" />
     <Content Include="Estilos\StyleSheetAccesorios.css" />
+    <Content Include="Estilos\StyleSheetCategoria.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

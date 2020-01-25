@@ -4,23 +4,25 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="Shortcut Icon" href="../Imagenes/Logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../Estilos/StyleSheetCategoria.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Seccion Categorias</title>
+    <title>Categoria | BNH</title>
     <link rel="stylesheet" type="text/css" href="/Estilos/css/bootstrap.css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="jumbotron">
+            <div class="jumbotronq">
                 <h3>Sección Categorías</h3>
             </div>
             <div class="thumbnail">
                 <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox>
-                
-                <br />                
+
+                <br />
                 <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripcion"></asp:TextBox>
                 <asp:Label ID="lb_descr" runat="server" Text=""></asp:Label>
-                
+
                 <br />
                 <br />
                 <asp:Button ID="btnADD" runat="server" Text="Agregar" CssClass="form-control btn btn-primary" OnClick="btnADD_Click" /><br />

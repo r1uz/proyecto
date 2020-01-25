@@ -4,8 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Sección Productos</title>
+<link rel="Shortcut Icon" href="../Imagenes/Logo.jpg" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../Estilos/StyleSheet2.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Productos | BNH</title>
     <link rel="stylesheet" type="text/css" href="/Estilos/css/bootstrap.css" />
 </head>
 <body>
