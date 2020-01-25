@@ -46,6 +46,7 @@ namespace Testeo.Sitios
             }
             else
             {
+              
                 Categoria c = adocategoria.buscarCategoria(Convert.ToInt32(dlcategoria.SelectedValue));
                 Producto p = new Producto();
 

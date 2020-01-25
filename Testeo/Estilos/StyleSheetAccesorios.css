@@ -17,14 +17,15 @@
 .img-responsive{
     margin:1vh;
     margin-bottom:25px;
-    width:200px;
-    height:200px;
-    border:solid 5px white;
+    width:250px;
+    height:250px;
+    border:solid 5px black;
     float:left;
     margin-left:auto;
+   
 }
 
 .img-responsive:hover{
-    border:solid 4px grey;
+    border:solid 4px black;
 
 }

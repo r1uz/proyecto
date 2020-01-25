@@ -42,13 +42,13 @@ namespace Testeo.Sitios
         protected global::System.Web.UI.WebControls.TextBox txtnombre;
 
         /// <summary>
-        /// Control txtprecio.
+        /// Control textprecio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtprecio;
+        protected global::System.Web.UI.WebControls.TextBox textprecio;
 
         /// <summary>
         /// Control txtstock.

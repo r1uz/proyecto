@@ -14,21 +14,25 @@
     <div class="background">
         <form id="form1" runat="server">
             <div class="container">
-                <asp:Button ID="Button1" runat="server" CssClass="btn btn-warning" Text="Volver" OnClick="Button1_Click" /> <br />  <br />
+                <asp:Button ID="Button1" runat="server" CssClass="btn btn-warning" Text="Volver" OnClick="Button1_Click" />
+                <br />
+                <br />
                 <div class="jumbotron2">
                     <h3>Módulo Productos</h3>
-                    
+
                 </div>
                 <div class="thumbnail">
                     <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox><br />
 
-                    <asp:TextBox ID="txtprecio" runat="server" CssClass="form-control" placeholder="Precio"></asp:TextBox><br />
+                    <asp:TextBox ID="textprecio" runat="server" CssClass="form-control" placeholder="Precio" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;"></asp:TextBox>
+                    <br />
+                    <asp:TextBox ID="txtstock" runat="server" CssClass="form-control" placeholder="Stock" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;"></asp:TextBox>
 
-                    <asp:TextBox ID="txtstock" runat="server" CssClass="form-control" placeholder="Stock"></asp:TextBox><br />
-
+                    <br />
                     <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripción"></asp:TextBox><br />
 
-                    Categoría: <asp:DropDownList ID="dlcategoria" runat="server"></asp:DropDownList><br />
+                    Categoría:
+                    <asp:DropDownList ID="dlcategoria" runat="server"></asp:DropDownList><br />
 
                     <asp:Image ID="imgPreview" Width="50" float="left" ImageUrl="https://cdn.pixabay.com/photo/2017/07/11/10/43/upload-2493114_960_720.png" runat="server" />
                     <br />
@@ -41,7 +45,7 @@
                     <asp:Label ID="lb_descr" runat="server" Text=""></asp:Label>
                     <br />
 
-                    
+
                     <br />
                     <asp:Button ID="btnprod" runat="server" Text="Agregar Producto" CssClass="form-control btn btn-primary" OnClick="btnprod_Click" /><br />
                     <asp:Label ID="Label5" runat="server" Text=""></asp:Label><br />
@@ -82,7 +86,7 @@
                                     <asp:Label ID="lb4" runat="server" Text='<% #Bind("precio")%>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:TextBox ID="txtprecio2" runat="server" Text='<% #Bind("precio")%>'></asp:TextBox>
+                                    <asp:TextBox ID="txtprecio2" runat="server" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;" Text='<% #Bind("precio")%>'></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
@@ -91,7 +95,7 @@
                                     <asp:Label ID="lb5" runat="server" Text='<% #Bind("stock")%>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:TextBox ID="txtstock2" runat="server" Text='<% #Bind("stock")%>'></asp:TextBox>
+                                    <asp:TextBox ID="txtstock2" runat="server" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;" Text='<% #Bind("stock")%>'></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
@@ -112,8 +116,10 @@
                                     <asp:DropDownList ID="dlcategoria2" runat="server"></asp:DropDownList>
                                 </EditItemTemplate>
                             </asp:TemplateField>
-                            <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" />
 
+                             
+                                <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" />
+                             
                         </Columns>
                     </asp:GridView>
 
