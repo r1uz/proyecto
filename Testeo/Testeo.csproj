@@ -208,6 +208,7 @@
     <Content Include="Sitios\Mantenimiento.aspx" />
     <Content Include="Sitios\ModuloAccesorios.aspx" />
     <Content Include="Sitios\ModuloEscritorios.aspx" />
+    <Content Include="Sitios\ModuloReserva.aspx" />
     <Content Include="Sitios\Principal.aspx" />
     <Content Include="Sitios\ProductoWeb.aspx" />
     <Content Include="Sitios\ReservaWeb.aspx" />
@@ -323,6 +324,13 @@
     </Compile>
     <Compile Include="Sitios\ModuloEscritorios.aspx.designer.cs">
       <DependentUpon>ModuloEscritorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitios\ModuloReserva.aspx.cs">
+      <DependentUpon>ModuloReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitios\ModuloReserva.aspx.designer.cs">
+      <DependentUpon>ModuloReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitios\Principal.aspx.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
