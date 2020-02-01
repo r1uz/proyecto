@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -33,10 +36,14 @@ namespace Testeo.ADO
 
         public int eliminarCategoria(int codigo)
         {
-            Categoria c = contexto.Categoria.Find(codigo); 
-            contexto.Categoria.Remove(c);
-            return contexto.SaveChanges();
+            
+                Categoria c = contexto.Categoria.Find(codigo);
+                contexto.Categoria.Remove(c);
+                return contexto.SaveChanges();
+
         }
+           
+        
 
         public int actualizarCategoria(Categoria nueva)
         {

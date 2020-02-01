@@ -24,7 +24,7 @@
                 <div class="thumbnail">
                     <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox><br />
 
-                    <asp:TextBox ID="textprecio" runat="server" CssClass="form-control" placeholder="Precio" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;"></asp:TextBox>
+                    <asp:TextBox ID="txtprecio" runat="server" CssClass="form-control" placeholder="Precio" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;"></asp:TextBox>
                     <br />
                     <asp:TextBox ID="txtstock" runat="server" CssClass="form-control" placeholder="Stock" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;"></asp:TextBox>
 
@@ -42,7 +42,7 @@
                     <br />
 
 
-                    <asp:Label ID="lb_descr" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="lb_descr" CssClass="label-danger" runat="server" Text=""></asp:Label>
                     <br />
 
 

@@ -210,6 +210,7 @@
     <Content Include="Sitios\ModuloEscritorios.aspx" />
     <Content Include="Sitios\Principal.aspx" />
     <Content Include="Sitios\ProductoWeb.aspx" />
+    <Content Include="Sitios\ReservaWeb.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -217,7 +218,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADO\CategoriaADO.cs" />
+    <Compile Include="ADO\Detalle_ReservaADO.cs" />
     <Compile Include="ADO\ProductoADO.cs" />
+    <Compile Include="ADO\ReservaADO.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -335,6 +338,13 @@
     <Compile Include="Sitios\ProductoWeb.aspx.designer.cs">
       <DependentUpon>ProductoWeb.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sitios\ReservaWeb.aspx.cs">
+      <DependentUpon>ReservaWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitios\ReservaWeb.aspx.designer.cs">
+      <DependentUpon>ReservaWeb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
@@ -357,6 +367,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controller\" />
     <Folder Include="Imagenes\" />
     <Folder Include="Videos\" />
   </ItemGroup>

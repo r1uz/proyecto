@@ -10,6 +10,7 @@
     <title>Categoria | BNH</title>
     <link rel="stylesheet" type="text/css" href="/Estilos/css/bootstrap.css" />
 </head>
+
 <body>
     <div class="background">
         <form id="form1" runat="server">
@@ -26,6 +27,7 @@
                     <asp:Label ID="lb_descr" runat="server" Text=""></asp:Label>
 
                     <br />
+                    <asp:Label ID="lb_err" runat="server" Text=""></asp:Label>
                     <br />
                     <asp:Button ID="btnADD" runat="server" Text="Agregar" CssClass="form-control btn btn-primary" OnClick="btnADD_Click" /><br />
                     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>

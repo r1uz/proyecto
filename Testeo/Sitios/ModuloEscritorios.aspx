@@ -23,7 +23,8 @@
             <div class="container">
                 <div class="row">
                     <asp:Panel runat="server" CssStyle="text-align:left;" ID="Panel2" HorizontalAlign="left">
-
+                        <asp:Button ID="btn_reserva" runat="server" CssClass="form-control btn btn-success" Text="Reservar" OnClick="btn_reserva_Click" />
+                        <br /><br />
                         <asp:Repeater ID="Repeater1" runat="server">
                             <ItemTemplate>
                                 <div class="jumbotron jumbotron-fluid">

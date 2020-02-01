@@ -20,7 +20,7 @@
                 <h1 class="Titulo">BNH</h1>
                 <video src="../Videos/Blonher_HD.mp4" controls="controls" loop="loop" width="160" height="120"></video>
                 <h2 class="Subtitulo">Lo nuevo en Escritorios GAMERS</h2>
-                <a href="#" class="Boton">Reserve Ahora</a>
+                <a href="ReservaWeb.aspx" class="Boton">Reserve Ahora</a>
                 <div id="Contenedor2">
                 </div>
                 <div class="TriB"></div>

@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -30,14 +33,14 @@ namespace Testeo.Sitios
 
             if (txtnombre.Text == "" || txtdescripcion.Text == "")
             {
-               
-                    lb_descr.Text = "Favor no ingresar campos vacíos";
-                
-                
+
+                lb_descr.Text = "Favor no ingresar campos vacíos";
+
+
             }
             else
             {
-                
+
                 lb_descr.Text = "";
                 Categoria nueva = new Categoria();
                 nueva.nombre = txtnombre.Text.ToUpper();
@@ -55,15 +58,17 @@ namespace Testeo.Sitios
         {
             GridView1.EditIndex = -1;
             BindData();
-           
+
         }
 
         protected void rowDeletingEvent(object sender, GridViewDeleteEventArgs e)
         {
+
             int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
             ado.eliminarCategoria(codigo);
             GridView1.EditIndex = -1;
             BindData();
+
         }
 
         protected void rowEditingEvent(object sender, GridViewEditEventArgs e)
@@ -74,7 +79,7 @@ namespace Testeo.Sitios
 
         protected void rowUpdatingEvent(object sender, GridViewUpdateEventArgs e)
         {
-           
+
             GridViewRow fila = GridView1.Rows[e.RowIndex];
             int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
 

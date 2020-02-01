@@ -11,7 +11,7 @@ namespace Testeo.Sitios
 {
 
 
-    public partial class ProductoWeb
+    public partial class ReservaWeb
     {
 
         /// <summary>
@@ -33,67 +33,49 @@ namespace Testeo.Sitios
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Control txtnombre.
+        /// Control dlproducto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtnombre;
+        protected global::System.Web.UI.WebControls.DropDownList dlproducto;
 
         /// <summary>
-        /// Control txtprecio.
+        /// Control txttelefono.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtprecio;
+        protected global::System.Web.UI.WebControls.TextBox txttelefono;
 
         /// <summary>
-        /// Control txtstock.
+        /// Control txtciudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtstock;
+        protected global::System.Web.UI.WebControls.TextBox txtciudad;
 
         /// <summary>
-        /// Control txtdescripcion.
+        /// Control txtregion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdescripcion;
+        protected global::System.Web.UI.WebControls.TextBox txtregion;
 
         /// <summary>
-        /// Control dlcategoria.
+        /// Control txtdireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dlcategoria;
-
-        /// <summary>
-        /// Control imgPreview.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPreview;
-
-        /// <summary>
-        /// Control fuploadImagen.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fuploadImagen;
+        protected global::System.Web.UI.WebControls.TextBox txtdireccion;
 
         /// <summary>
         /// Control lb_descr.
@@ -105,48 +87,30 @@ namespace Testeo.Sitios
         protected global::System.Web.UI.WebControls.Label lb_descr;
 
         /// <summary>
-        /// Control btnprod.
+        /// Control txtreserva.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnprod;
+        protected global::System.Web.UI.WebControls.Label txtreserva;
 
         /// <summary>
-        /// Control Label5.
+        /// Control fecha_req.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Calendar fecha_req;
 
         /// <summary>
-        /// Control lb_image.
+        /// Control btn_reserva.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_image;
-
-        /// <summary>
-        /// Control Image2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
-
-        /// <summary>
-        /// Control GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Button btn_reserva;
     }
 }

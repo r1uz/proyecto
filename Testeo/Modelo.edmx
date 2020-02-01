@@ -21,7 +21,7 @@
           <Property Name="id_producto_d" Type="int" />
           <Property Name="id_dr" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="precioFinal" Type="int" />
-          <Property Name="nombreProd" Type="varchar" MaxLength="20" />
+          <Property Name="nombreProd" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="Producto">
           <Key>
@@ -42,9 +42,9 @@
           <Property Name="id_reserva" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="fecha_reserva" Type="smalldatetime" />
           <Property Name="fecha_requerida" Type="date" />
-          <Property Name="ciudad" Type="varchar" MaxLength="20" />
-          <Property Name="region" Type="varchar" MaxLength="20" />
-          <Property Name="direccion" Type="varchar" MaxLength="50" />
+          <Property Name="ciudad" Type="varchar" MaxLength="255" />
+          <Property Name="region" Type="varchar" MaxLength="255" />
+          <Property Name="direccion" Type="varchar" MaxLength="255" />
           <Property Name="id_usuario" Type="int" />
           <Property Name="telefono" Type="int" />
         </EntityType>
@@ -67,6 +67,7 @@
           <Property Name="pwd" Type="varchar" MaxLength="15" />
           <Property Name="nombre" Type="varchar" MaxLength="20" />
           <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="tipo" Type="varchar" MaxLength="20" />
         </EntityType>
         <Association Name="FK_key">
           <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
@@ -192,7 +193,7 @@
           <Property Name="id_producto_d" Type="Int32" />
           <Property Name="id_dr" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="precioFinal" Type="Int32" />
-          <Property Name="nombreProd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="nombreProd" Type="String" FixedLength="false" Unicode="false" MaxLength="255" />
           <NavigationProperty Name="Reserva" Relationship="Self.fk_key1" FromRole="Detalle_Reserva" ToRole="Reserva" />
           <NavigationProperty Name="Producto" Relationship="Self.fk_key2" FromRole="Detalle_Reserva" ToRole="Producto" />
         </EntityType>
@@ -217,9 +218,9 @@
           <Property Name="id_reserva" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="fecha_reserva" Type="DateTime" Precision="0" />
           <Property Name="fecha_requerida" Type="DateTime" Precision="0" />
-          <Property Name="ciudad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ciudad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="region" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="direccion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="id_usuario" Type="Int32" />
           <Property Name="telefono" Type="Int32" />
           <NavigationProperty Name="Detalle_Reserva" Relationship="Self.fk_key1" FromRole="Reserva" ToRole="Detalle_Reserva" />
@@ -245,6 +246,7 @@
           <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Reserva" Relationship="Self.fk_key3" FromRole="Usuario" ToRole="Reserva" />
+          <Property Name="tipo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_key">
           <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
@@ -426,6 +428,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="ProyectoModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="usuario1" ColumnName="usuario" />
                 <ScalarProperty Name="pwd" ColumnName="pwd" />

@@ -15,7 +15,6 @@ namespace Testeo.Sitios
     {
         private ProductoADO adoproducto = new ProductoADO();
         private CategoriaADO adocategoria = new CategoriaADO();
-        string CadenaConexion = "Data Source=(Localdb)\\MSSQLLocalDB;Initial Catalog=Proyecto;Integrated Security=True";
         private void BindDataProd()
         {
             GridView1.DataSource = adoproducto.getProductos();

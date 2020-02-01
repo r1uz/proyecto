@@ -44,5 +44,11 @@ namespace Testeo.Sitios
         {
             Response.Redirect("ModuloAccesorios.aspx");
         }
+
+        protected void btn_reserva_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ReservaWeb.aspx");
+        }
+
     }
 }

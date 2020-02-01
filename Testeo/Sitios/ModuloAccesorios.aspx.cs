@@ -46,6 +46,9 @@ namespace Testeo.Sitios
             Response.Redirect("ModuloEscritorios.aspx");
         }
 
-
+        protected void btn_reserva_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ReservaWeb.aspx");
+        }
     }
 }
