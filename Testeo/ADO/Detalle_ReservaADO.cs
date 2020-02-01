@@ -22,6 +22,7 @@ namespace Testeo.ADO
 
         public Detalle_Reserva buscarDetalleReserva(int codigo)
         {
+
             return contexto.Detalle_Reserva.Find(codigo);
         }
 

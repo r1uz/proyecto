@@ -80,8 +80,10 @@ namespace Testeo.Sitios
 
                 ado.agregarReserva(r);
 
+             
 
-
+                
+             
                 txtciudad.Text = "";
                 txtdireccion.Text = "";
                 txttelefono.Text = "";

@@ -29,7 +29,7 @@
                     <asp:TextBox ID="txtstock" runat="server" CssClass="form-control" placeholder="Stock" onkeypress="if(event.keyCode<48 || event.keyCode>57)event.returnValue=false;"></asp:TextBox>
 
                     <br />
-                    <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" placeholder="Descripción"></asp:TextBox><br />
+                    <asp:TextBox ID="txtdescripcion" runat="server" CssClass="form-control" maxlength="255" placeholder="Descripción"></asp:TextBox><br />
 
                     Categoría:
                     <asp:DropDownList ID="dlcategoria" runat="server"></asp:DropDownList><br />

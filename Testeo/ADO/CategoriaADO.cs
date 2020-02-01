@@ -11,6 +11,8 @@ namespace Testeo.ADO
 
     public class CategoriaADO
     {
+        string CadenaConexion = "Data Source=(Localdb)\\MSSQLLocalDB;Initial Catalog=Proyecto;Integrated Security=True";
+
         private ProyectoEntities contexto = new ProyectoEntities();
 
 
@@ -36,8 +38,26 @@ namespace Testeo.ADO
 
         public int eliminarCategoria(int codigo)
         {
-            
-                Categoria c = contexto.Categoria.Find(codigo);
+
+
+            SqlConnection cn = new SqlConnection(CadenaConexion);
+            cn.Open();
+            var cmd = new SqlCommand("select p.id_producto  from Producto p join Categoria c on " +
+                "(p.id_categoriap=c.id_categoria) where c.id_categoria=@id", cn);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = codigo;
+            cmd.Connection = cn;
+            int idprod = Convert.ToInt32(cmd.ExecuteScalar());
+
+
+            if (idprod != 0)
+
+            {
+                Console.WriteLine("no puede realizar la eliminaciòn, ya que hay un produco en la categoría");
+                return contexto.SaveChanges();
+            }
+
+
+            Categoria c = contexto.Categoria.Find(codigo);
                 contexto.Categoria.Remove(c);
                 return contexto.SaveChanges();
 
