@@ -17,7 +17,7 @@ namespace Testeo.Sitios
 
         private void BindData()
         {
-            dlproducto.DataSource = adoproducto.getProductos();
+            dlproducto.DataSource = adoproducto.getProductosByStock();
             dlproducto.DataTextField = "nombre";
             dlproducto.DataValueField = "id_producto";
             
@@ -57,6 +57,13 @@ namespace Testeo.Sitios
                 cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = dlproducto.SelectedItem.Text;
                 cmd.Connection = cn;
                 int preciof = Convert.ToInt32(cmd.ExecuteScalar());
+
+                var cmd2 = new SqlCommand("update producto set stock = stock - 1 where id_producto = @id", cn);
+             
+                cmd2.Parameters.Add("@id",SqlDbType.Int).Value= Convert.ToInt32(dlproducto.SelectedItem.Value);
+                cmd2.Connection = cn;
+                cmd2.ExecuteNonQuery();
+
                 dr.precioFinal = preciof;
                 cn.Close();
                 dr.id_reserva_d = r.id_reserva;
@@ -64,10 +71,10 @@ namespace Testeo.Sitios
                 dr.id_producto_d = Convert.ToInt32(dlproducto.SelectedItem.Value);
                 r.Detalle_Reserva.Add(dr);
                 
-                r.ciudad = txtciudad.Text;
+                r.ciudad = txtciudad.Text.ToUpper();
                 r.telefono = Convert.ToInt32(txttelefono.Text);
-                r.region = txtregion.Text;
-                r.direccion = txtdireccion.Text;
+                r.region = txtregion.Text.ToUpper();
+                r.direccion = txtdireccion.Text.ToUpper();
                 r.fecha_reserva = DateTime.Now;
                 r.fecha_requerida = fecha_req.SelectedDate;
 

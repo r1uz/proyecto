@@ -42,6 +42,13 @@ namespace Testeo.ADO
         {
             var query = from p in contexto.Producto.Include("Categoria") select p;
             return query.ToList();
+
+        }
+
+        public List<Producto> getProductosByStock()
+        {   
+            var query = from p in contexto.Producto.Include("Categoria") where p.stock>=1 select p;
+            return query.ToList();
              
         }
     }
