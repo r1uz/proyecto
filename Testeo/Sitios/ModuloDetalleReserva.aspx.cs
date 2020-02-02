@@ -8,14 +8,12 @@ using Testeo.ADO;
 
 namespace Testeo.Sitios
 {
-    public partial class ModuloReserva1 : System.Web.UI.Page
+    public partial class ModuloReserva : System.Web.UI.Page
     {
-        private ReservaADO ado = new ReservaADO();
-
-
+        private Detalle_ReservaADO ado = new Detalle_ReservaADO();
         public void BindData()
         {
-            GridView1.DataSource = ado.getReservas();
+            GridView1.DataSource = ado.getDetalleReservas();
             GridView1.DataBind();
         }
         protected void Page_Load(object sender, EventArgs e)
@@ -28,13 +26,13 @@ namespace Testeo.Sitios
 
         protected void RowDeletingEvent(object sender, GridViewDeleteEventArgs e)
         {
-
+            
             int codigo = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
-            ado.eliminarReserva(codigo);
+            ado.eliminarDetalleReserva(codigo);
             GridView1.EditIndex = -1;
             BindData();
-
         }
+
 
         protected void RowEditingEvent(object sender, GridViewEditEventArgs e)
         {

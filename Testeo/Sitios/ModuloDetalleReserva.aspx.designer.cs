@@ -11,7 +11,7 @@ namespace Testeo.Sitios
 {
 
 
-    public partial class ModuloReserva1
+    public partial class ModuloReserva
     {
 
         /// <summary>

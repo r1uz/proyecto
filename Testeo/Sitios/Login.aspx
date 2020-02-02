@@ -26,7 +26,7 @@
                 <input type="password" name="password" placeholder="&#128272;Contraseña" />               
                 <input type="submit" name="Ingresar" value="Ingresar" />
                 <a href="#">Lost your password</a><br/>
-                <a href="#">Don't have an account?</a>
+                <a href="RegistroWeb.aspx">Don't have an account?</a>
             </div>
         </form>
     </div>

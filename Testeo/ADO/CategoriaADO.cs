@@ -5,6 +5,7 @@ using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.UI;
 
 namespace Testeo.ADO
 {
@@ -52,7 +53,6 @@ namespace Testeo.ADO
             if (idprod != 0)
 
             {
-                Console.WriteLine("no puede realizar la eliminaciòn, ya que hay un produco en la categoría");
                 return contexto.SaveChanges();
             }
 
@@ -71,5 +71,7 @@ namespace Testeo.ADO
             c = nueva;
             return contexto.SaveChanges();
         }
+
+       
     }
 }

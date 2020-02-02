@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ModuloReserva.aspx.cs" Inherits="Testeo.Sitios.ModuloReserva" %>
-
-<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ModuloReserva.aspx.cs" Inherits="Testeo.Sitios.ModuloReserva1" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -18,7 +16,7 @@
                 <br />
                 <br />
                 <div class="jumbotron2">
-                    <h3>Módulo Reserva</h3>
+                    <h3>Módulo Reserva </h3>
 
                 </div>
                 <div class="thumbnail">
@@ -28,56 +26,88 @@
                         OnRowDeleting="RowDeletingEvent"
                         OnRowEditing="RowEditingEvent"
                         AutoGenerateColumns="false"
-                        DataKeyNames="id_dr">
+                        DataKeyNames="id_reserva">
 
 
                         <Columns>
-                            <asp:TemplateField HeaderText="CODIGO DETALLE RESERVA">
-                                <ItemTemplate>
-                                    <asp:Label ID="lb1" runat="server" ReadOnly="true" Text='<% #Bind("id_dr")%>'></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:Label ID="lb2" runat="server" ReadOnly="true" Text='<% #Bind("id_dr")%>'></asp:Label>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
-
                             <asp:TemplateField HeaderText="CODIGO RESERVA">
                                 <ItemTemplate>
-                                    <asp:Label ID="lb3" runat="server" Text='<% #Bind("id_reserva_d")%>'></asp:Label>
+                                    <asp:Label ID="lb1" runat="server" ReadOnly="true" Text='<% #Bind("id_reserva")%>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:Label ID="lb8" runat="server" Text='<% #Bind("id_reserva_d")%>'></asp:Label>
+                                    <asp:Label ID="lb2" runat="server" ReadOnly="true" Text='<% #Bind("id_reserva")%>'></asp:Label>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
-                            <asp:TemplateField HeaderText="CODIGO PRODUCTO">
+                            <asp:TemplateField HeaderText="FECHA RESERVA">
                                 <ItemTemplate>
-                                    <asp:Label ID="lb4" runat="server" Text='<% #Bind("id_producto_d")%>'></asp:Label>
+                                    <asp:Label ID="lb3" runat="server" Text='<% #Bind("fecha_reserva")%>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:Label ID="lb9" runat="server" Text='<% #Bind("id_producto_d")%>'></asp:Label>
+                                    <asp:Label ID="lb8" runat="server" Text='<% #Bind("fecha_reserva")%>'></asp:Label>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
-                            <asp:TemplateField HeaderText="PRECIO FINAL">
+                            <asp:TemplateField HeaderText="FECHA REQUERIDA">
                                 <ItemTemplate>
-                                    <asp:Label ID="lb5" runat="server" Text='<% #Bind("precioFinal")%>'></asp:Label>
+                                    <asp:Label ID="lb4" runat="server" Text='<% #Bind("fecha_requerida")%>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:Label ID="lb10" runat="server" Text='<% #Bind("precioFinal")%>'></asp:Label>
+                                    <asp:Label ID="lb9" runat="server" Text='<% #Bind("fecha_requerida")%>'></asp:Label>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
-                            <asp:TemplateField HeaderText="NOMBRE PRODUCTO">
+                            <asp:TemplateField HeaderText="CIUDAD">
                                 <ItemTemplate>
-                                    <asp:Label ID="lb6" runat="server" Text='<% #Bind("nombreProd")%>'></asp:Label>
+                                    <asp:Label ID="lb5" runat="server" Text='<% #Bind("ciudad")%>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:Label ID="lb11" runat="server" Text='<% #Bind("nombreProd")%>'></asp:Label>
+                                    <asp:Label ID="lb10" runat="server" Text='<% #Bind("ciudad")%>'></asp:Label>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
-                                 <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" />
+                            <asp:TemplateField HeaderText="REGION">
+                                <ItemTemplate>
+                                    <asp:Label ID="lb16" runat="server" Text='<% #Bind("region")%>'></asp:Label>
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                    <asp:Label ID="lb15" runat="server" Text='<% #Bind("region")%>'></asp:Label>
+                                </EditItemTemplate>
+                            </asp:TemplateField>
+
+
+                            <asp:TemplateField HeaderText="DIRECCION">
+                                <ItemTemplate>
+                                    <asp:Label ID="lb13" runat="server" Text='<% #Bind("direccion")%>'></asp:Label>
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                    <asp:Label ID="lb14" runat="server" Text='<% #Bind("direccion")%>'></asp:Label>
+                                </EditItemTemplate>
+                            </asp:TemplateField>
+
+
+                            <asp:TemplateField HeaderText="TELEFONO">
+                                <ItemTemplate>
+                                    <asp:Label ID="lb12" runat="server" Text='<% #Bind("telefono")%>'></asp:Label>
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                    <asp:Label ID="lb17" runat="server" Text='<% #Bind("telefono")%>'></asp:Label>
+                                </EditItemTemplate>
+                            </asp:TemplateField>
+
+                            <asp:TemplateField HeaderText="CODIGO DE USUARIO">
+                                <ItemTemplate>
+                                    <asp:Label ID="lb19" runat="server" Text='<% #Bind("id_usuario")%>'></asp:Label>
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                    <asp:Label ID="lb18" runat="server" Text='<% #Bind("id_usuario")%>'></asp:Label>
+                                </EditItemTemplate>
+                            </asp:TemplateField>
+
+
+
+
+                                 <asp:CommandField ButtonType="Link" ShowDeleteButton="true" ShowEditButton="true" />
                              
                         </Columns>
                     </asp:GridView>
@@ -89,4 +119,3 @@
     </div>
 </body>
 </html>
-

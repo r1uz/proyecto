@@ -208,9 +208,11 @@
     <Content Include="Sitios\Mantenimiento.aspx" />
     <Content Include="Sitios\ModuloAccesorios.aspx" />
     <Content Include="Sitios\ModuloEscritorios.aspx" />
+    <Content Include="Sitios\ModuloDetalleReserva.aspx" />
     <Content Include="Sitios\ModuloReserva.aspx" />
     <Content Include="Sitios\Principal.aspx" />
     <Content Include="Sitios\ProductoWeb.aspx" />
+    <Content Include="Sitios\RegistroWeb.aspx" />
     <Content Include="Sitios\ReservaWeb.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -222,6 +224,7 @@
     <Compile Include="ADO\Detalle_ReservaADO.cs" />
     <Compile Include="ADO\ProductoADO.cs" />
     <Compile Include="ADO\ReservaADO.cs" />
+    <Compile Include="ADO\UsuarioADO.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -325,6 +328,13 @@
     <Compile Include="Sitios\ModuloEscritorios.aspx.designer.cs">
       <DependentUpon>ModuloEscritorios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sitios\ModuloDetalleReserva.aspx.cs">
+      <DependentUpon>ModuloDetalleReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitios\ModuloDetalleReserva.aspx.designer.cs">
+      <DependentUpon>ModuloDetalleReserva.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sitios\ModuloReserva.aspx.cs">
       <DependentUpon>ModuloReserva.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -345,6 +355,13 @@
     </Compile>
     <Compile Include="Sitios\ProductoWeb.aspx.designer.cs">
       <DependentUpon>ProductoWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitios\RegistroWeb.aspx.cs">
+      <DependentUpon>RegistroWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitios\RegistroWeb.aspx.designer.cs">
+      <DependentUpon>RegistroWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitios\ReservaWeb.aspx.cs">
       <DependentUpon>ReservaWeb.aspx</DependentUpon>

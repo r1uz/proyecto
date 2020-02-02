@@ -76,7 +76,7 @@ namespace Testeo.Sitios
                 r.region = txtregion.Text.ToUpper();
                 r.direccion = txtdireccion.Text.ToUpper();
                 r.fecha_reserva = DateTime.Now;
-                r.fecha_requerida = fecha_req.SelectedDate;
+                r.fecha_requerida = fecha_req.SelectedDate.Date;
 
                 ado.agregarReserva(r);
 

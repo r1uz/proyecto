@@ -26,13 +26,18 @@ namespace Testeo.Sitios
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ModuloReserva.aspx");
+            Response.Redirect("ModuloDetalleReserva.aspx");
         }
        
 
         protected void Button4_Click(object sender, EventArgs e)
         {
             Response.Redirect("Principal.aspx");
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ModuloReserva.aspx");
         }
     }
 }
