@@ -19,15 +19,6 @@ namespace Testeo.Sitios
         protected void btnADD_Click1(object sender, EventArgs e)
         {
 
-            if (txtname.Text == "" || txtpass.Text == "" || txtemail.Text == "" || txtuser.Text == "")
-            {
-                string msg = "Favor rellenar todos los campos";
-                Response.Write("<script language=javascript>alert('" + msg + "');</script>");
-
-            }
-
-            else
-            {
 
                 UsuarioADO ado = new UsuarioADO();
                 Usuario u = new Usuario();
@@ -41,7 +32,7 @@ namespace Testeo.Sitios
 
                 MsgBox(str, this.Page, this);
                 
-            }
+           
 
 
 

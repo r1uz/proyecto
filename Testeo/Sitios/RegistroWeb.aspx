@@ -19,15 +19,18 @@
                 <!-- USERNAME -->
                 <label for="username">Username</label>
                 <asp:TextBox ID="txtuser" runat="server" maxlength="15" placeholder="&#128272;Usuario"></asp:TextBox>
-               
-
+                <br /><asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator1" ControlToValidate="txtuser" ErrorMessage="Favor ingresar Usuario" />
+                
+                <br />
                 <!-- PASSWORD -->
                 <label for="password">Password</label>
                 <asp:TextBox ID="txtpass" runat="server" maxlength="15" TextMode="Password" placeholder="&#128272;Contraseña"></asp:TextBox>             
-               
+               <br /><asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator2" ControlToValidate="txtpass" ErrorMessage="Favor ingresar Contraseña" />
+                <br />
                  <label for="nombre">Nombre</label><br />
                 <asp:TextBox ID="txtname" runat="server" maxlength="20" placeholder="Nombre"></asp:TextBox>             
-                               
+                <br /><asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator3" ControlToValidate="txtname" ErrorMessage="Favor ingresar Nombre" />
+                       <br />        
                 <br />
                 <label for="email">Email</label>
                 <asp:TextBox ID="txtemail" runat="server" maxlength="20" placeholder="Email" Height="20px" Width="115px"></asp:TextBox>             
@@ -38,7 +41,8 @@
                     <asp:ListItem>@correoaiep.cl</asp:ListItem>
                     <asp:ListItem>@yahoo.com</asp:ListItem>
                 </asp:DropDownList><br />
-
+                <br /><asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator4" ControlToValidate="txtemail" ErrorMessage="Favor ingresar Email" />
+                <br />
                 
                 <asp:Button ID="btnADD" runat="server" Text="Registrarse" OnClick="btnADD_Click1"   />
             
