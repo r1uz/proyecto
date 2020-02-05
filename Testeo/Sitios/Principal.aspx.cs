@@ -11,12 +11,28 @@ namespace Testeo.Sitios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (HttpContext.Current.Session["id"]==(null))
+            {
+                HttpContext.Current.Session["tipo"] = "visitante";
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("Mantenimiento.aspx");
+        }
+
+        protected void btn_cierre_Click(object sender, EventArgs e)
+        {
+            
+            Session.Remove("id");
+            Response.Redirect("Login.aspx");
+
+        }
+
+        protected void Button_login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
     }
 }

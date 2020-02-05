@@ -15,6 +15,9 @@
         <form id="form1" runat="server">
             <div class="container">
                 <asp:Button ID="Button1" runat="server" CssClass="btn btn-warning" Text="Volver" OnClick="Button1_Click" />
+                <%if (HttpContext.Current.Session["tipo"].Equals("administrador"))
+                    { %>
+
                 <br />
                 <br />
                 <div class="jumbotron2">
@@ -84,6 +87,7 @@
 
 
                 </div>
+                <%} %>
             </div>
         </form>
     </div>

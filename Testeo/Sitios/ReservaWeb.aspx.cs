@@ -26,6 +26,7 @@ namespace Testeo.Sitios
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 txtreserva.Text = DateTime.Now.ToString();
@@ -45,7 +46,14 @@ namespace Testeo.Sitios
             Reserva r = new Reserva();
             Detalle_Reserva dr = new Detalle_Reserva();
 
-            if (txtciudad.Text == "" || txtregion.Text == "" || txtdireccion.Text == "" || txttelefono.Text == "")
+            if (HttpContext.Current.Session["id"] == null)
+            {
+
+                MsgBox("Aún no ha iniciado sesión, no podrá realizar reservas hasta que inicie sesión", this.Page, this);
+
+            }
+
+            else if (txtciudad.Text == "" || txtregion.Text == "" || txtdireccion.Text == "" || txttelefono.Text == "")
             {
                 lb_descr.Text = "Favor no ingresar campos vacíos";
             }
@@ -64,13 +72,19 @@ namespace Testeo.Sitios
                 cmd2.Connection = cn;
                 cmd2.ExecuteNonQuery();
 
+
+
+
+
+
+                
                 dr.precioFinal = preciof;
                 cn.Close();
                 dr.id_reserva_d = r.id_reserva;
                 dr.nombreProd = dlproducto.SelectedItem.Text;
                 dr.id_producto_d = Convert.ToInt32(dlproducto.SelectedItem.Value);
                 r.Detalle_Reserva.Add(dr);
-                
+                r.id_usuario = Convert.ToInt32(HttpContext.Current.Session["id"]);
                 r.ciudad = txtciudad.Text.ToUpper();
                 r.telefono = Convert.ToInt32(txttelefono.Text);
                 r.region = txtregion.Text.ToUpper();
@@ -80,7 +94,13 @@ namespace Testeo.Sitios
 
                 ado.agregarReserva(r);
 
-             
+                string cadena = "¡Reserva Realizada!" +
+                    "\\nProducto: " + dlproducto.SelectedItem.Text +
+                    "\\nCiudad: " + txtciudad.Text +
+                    "\\nFecha Requerida: " + fecha_req.SelectedDate +
+                    "\\nTelefono: " + txttelefono.Text +
+                    "\\nPrecio Final: $" + preciof;
+
 
                 
              
@@ -88,9 +108,18 @@ namespace Testeo.Sitios
                 txtdireccion.Text = "";
                 txttelefono.Text = "";
                 txtregion.Text = "";
-
+                MsgBox(cadena, this.Page, this);
                 BindData();
             }
+        }
+
+        public void MsgBox(String ex, Page pg, Object obj)
+        {
+            string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
+            Type cstype = obj.GetType();
+            ClientScriptManager cs = pg.ClientScript;
+            cs.RegisterClientScriptBlock(cstype, s, s.ToString());
+
         }
     }
 }
