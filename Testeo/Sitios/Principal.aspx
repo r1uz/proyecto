@@ -34,11 +34,10 @@
                 <%} %>
                 <br />
                 <h1 class="Titulo">BNH</h1>
-                <video src="../Videos/Blonher_HD.mp4" controls="controls" loop="loop" width="160" height="120"></video>
+                <video src="../Videos/Blonher_HD.mp4" controls="controls" loop="loop" width="600" height="300"></video>
                 <h2 class="Subtitulo">Lo nuevo en Escritorios GAMERS</h2>
                 <a href="ReservaWeb.aspx" class="Boton">Reserve Ahora</a>
-                <div id="Contenedor2">
-                </div>
+                
                 <div class="TriB"></div>
             </div>
 
@@ -51,18 +50,18 @@
             <div id="Principal">
                 <div class="contain1">
                     <a href="ModuloAccesorios">
-                        <img alt="escritorio" class="imgcontain" src="../Imagenes/Principal.jpg" />
+                        <img alt="escritorio" class="imgcontain" src="../Imagenes/audi3.png" />
                     </a>
 
                 </div>
                 <div class="contain2">
                     <a href="ModuloEscritorios">
-                        <img alt="escritorio" class="imgcontain" src="../Imagenes/muestra.jpeg" />
+                        <img alt="escritorio" class="imgcontain2" src="../Imagenes/muestra.jpeg" />
                     </a>
                 </div>
                 <div class="contain3">
                     <a href="ModuloAccesorios">
-                        <img alt="escritorio" class="imgcontain" src="../Imagenes/Principal1.jpg" />
+                        <img alt="escritorio" class="imgcontain3" src="../Imagenes/ram1.png" />
                     </a>
                 </div>
 

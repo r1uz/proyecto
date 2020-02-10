@@ -7,7 +7,7 @@
     margin: auto;
     width: auto;
     height: auto;
-    background-color: #ffffff;
+    background-color: beige;
 }
 
 #Contenedor3 {
@@ -18,7 +18,7 @@
 }
 
 #Head {
-    height: 100vh;
+    height: 130vh;
     background-image: url(../Imagenes/BG3.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -32,9 +32,9 @@
 .Titulo {
     margin-top: 40px;
     font-size: 20vh;
-    text-align:center;
-    font-family:NSimSun;
-    text-decoration:solid;
+    text-align: center;
+    font-family: NSimSun;
+    text-decoration: solid;
 }
 
 .Subtitulo {
@@ -57,12 +57,12 @@
 }
 
 .Boton2 {
-    margin-top:10px;
+    margin-top: 10px;
     float: right;
     display: inline-block;
     padding: 0;
     width: 140px;
-    border:  2px solid red ;
+    border: 2px solid red;
     color: #ffffff;
     font-size: 19px;
     text-align: center;
@@ -72,9 +72,8 @@
 
 #Datos {
     height: auto;
-    background-color:#ffffff;
-    position:relative;
-
+    background-color: beige;
+    position: relative;
 }
 
 
@@ -82,21 +81,25 @@
     float: left;
     height: 200px;
     width: 300px;
+    border-color: beige;
 }
 
 .QuienesSomos {
     text-align: center;
     font-size: 85px;
     font-weight: 300;
+    font-style: italic;
+    font-family: Marlett;
 }
 
 .PaQuiSo {
     margin-top: 25px;
     margin-bottom: 13px;
     margin: 1em;
-    text-align: justify;
+    text-align: center;
     font-size: 24px;
     font-weight: 300;
+    font-family: Marlett;
     color: rgb(24,20,20);
 }
 
@@ -114,14 +117,14 @@
 .contain1 {
     width: 32%;
     height: 100%;
-    background-color: red;
+    background-color: crimson;
     float: left;
 }
 
-.contain1:hover {
-    width: 32%;
-    border-top: 20px solid red;
-}
+    .contain1:hover {
+        width: 32%;
+        border-top: 20px solid red;
+    }
 
 .contain2 {
     width: 36%;
@@ -130,29 +133,40 @@
     float: left;
 }
 
-.contain2:hover{
-    width:36%;
-    border-top: 20px solid red;
-
-}
+    .contain2:hover {
+        width: 36%;
+        border-top: 20px solid red;
+    }
 
 .imgcontain {
-    margin: 300px auto;
-    width: 90%;
-    height: 240px;
+    margin: 200px auto;
+    width: 91%;
+    height: 360px;
+}
+
+.imgcontain2 {
+    margin: 250px auto;
+    width: 94%;
+    height: 250px;
+}
+
+.imgcontain3 {
+    margin: 220px auto;
+    width: 94%;
+    height: 339px;
 }
 
 .contain3 {
     width: 32%;
     height: 100%;
-    background-color: red;
+    background-color: midnightblue;
     float: right;
 }
 
 .contain3:hover {
-    width: 32%;
-    border-top: 20px solid red;
-}
+        width: 32%;
+        border-top: 20px solid midnightblue;
+    }
 
 footer {
     height: 100vh;
@@ -167,14 +181,13 @@ footer {
     text-align: center;
 }
 
-.titulo-footer, .subtitulo-footer{
-    color:#b6ff00;
-    
+.titulo-footer, .subtitulo-footer {
+    color: #b6ff00;
 }
 
 .titulo-footer {
-    font-family:Calibri;
-    margin-top:40px;
+    font-family: Calibri;
+    margin-top: 40px;
     text-align: center;
     font-size: 56px;
 }
@@ -186,21 +199,21 @@ footer {
     margin-bottom: 64px;
 }
 
-.form-footer{
-    display:flex;
-    width:700px;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    margin:auto;
+.form-footer {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 input[type=text], input[type=email] {
     display: inline-block;
-    margin:auto;
-    height:40px;
+    margin: auto;
+    height: 40px;
     width: 400px;
     border: none;
-    color:#ffffff;
+    color: #ffffff;
     font-family: sans-serif;
     background: rgba(37,37,37,.7);
     margin-bottom: 16px;
@@ -208,7 +221,7 @@ input[type=text], input[type=email] {
 }
 
 textarea {
-    margin:auto;
+    margin: auto;
     display: block;
     width: 100%;
     max-width: 600px;
@@ -216,19 +229,19 @@ textarea {
     max-height: 200px;
     min-height: 200px;
     background: rgba(37,37,37,.7);
-    border:none;
-    color:#ffffff;
-    font-family:sans-serif;
-    margin-bottom:16px;
+    border: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-bottom: 16px;
 }
 
 input[type="submit"] {
     display: inline-block;
-    margin-left:auto;
+    margin-left: auto;
     border: none;
     color: #ffffff;
     background: rgba(37,37,37,.7);
-    width:96px;
+    width: 96px;
 }
 
 .TriB {
@@ -237,7 +250,7 @@ input[type="submit"] {
     left: 0;
     border-width: 0 0 35vh 100vw;
     border-style: solid;
-    border-color: transparent transparent #fff transparent;
+    border-color: transparent transparent beige transparent;
 }
 
 .TriB1 {
@@ -246,15 +259,16 @@ input[type="submit"] {
     left: 0;
     border-width: 0 0 35vh 100vw;
     border-style: solid;
-    border-color: transparent transparent #2c3e50 transparent;
+    border-color: transparent transparent beige transparent;
 }
+
 .TriT {
     position: absolute;
     top: 0;
     left: 0;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: beige transparent transparent transparent;
 }
 
 .TriT1 {
@@ -263,5 +277,5 @@ input[type="submit"] {
     left: 0;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
-    border-color: #2c3e50 transparent transparent transparent;
+    border-color: beige transparent transparent transparent;
 }

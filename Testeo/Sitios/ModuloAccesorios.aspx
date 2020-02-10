@@ -36,8 +36,8 @@
                                         <img class="img-responsive" src="data:image/jpg;base64,<%# Convert.ToBase64String((byte[])DataBinder.Eval(Container.DataItem,"Imagen"))%>" />
                                         <%#DataBinder.Eval(Container.DataItem,"nombre") %><br />
                                         Código Producto: <%#DataBinder.Eval(Container.DataItem,"id_producto") %><br />
-                                        Precio: $<%#DataBinder.Eval(Container.DataItem,"precio") %><br />
-                                        Descripción:<%#DataBinder.Eval(Container.DataItem,"descripcion") %><br />
+                                        Precio: $<%#DataBinder.Eval(Container.DataItem,"precio") %><br /><br />Descripción: <br /><br />
+                                        <%#DataBinder.Eval(Container.DataItem,"descripcion") %><br />
                                         <br />
 
                                     </div>
